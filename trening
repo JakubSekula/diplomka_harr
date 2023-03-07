@@ -1,0 +1,2 @@
+/opt/homebrew/opt/opencv@3/bin/opencv_createsamples -vec positive/test.vec -info positive/info.txt -num 2000 -bg negative/bg.txt
+/opt/homebrew/opt/opencv@3/bin/opencv_traincascade -data . -vec positive_scale_down_24_24/test.vec -bg negative_scale_down_24_24/bg.txt -w 24 -h 24 -numPos 1300 -numNeg 1300
